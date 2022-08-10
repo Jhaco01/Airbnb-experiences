@@ -1,5 +1,6 @@
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
+import { Card } from './components/Card';
 import './App.css';
 
 export const App = () => {
@@ -7,6 +8,7 @@ export const App = () => {
     <div className="App">
         < Navbar />
         < HeroSection />
+        < Card />
     </div>
   );
 }
