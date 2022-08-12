@@ -1,14 +1,14 @@
 import React from "react";
 import "../styles/CardImage.css"
-import img from "../img/image-12.png";
 
-export const CardImage = () => {
+
+export const CardImage = (props) => {
     return(
         <div className="card-img-state">                
             <div className="card-img">
-                <img src={img} />
+                <img src={props.img} />
             </div>
-            <div className="card-state"> <button> SOLD OUT </button> </div>
+            <div className="card-state"> <button> {props.state} </button> </div>
         </div>
     )
 }

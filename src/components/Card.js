@@ -3,14 +3,17 @@ import "../styles/Card.css"
 import { CardImage } from "./CardImage";
 import star from "../img/star.png";
 
-export const Card = () => {
+export const Card = (props) => {
     return(
         <div className="card">
-            < CardImage />
+            < CardImage 
+                img = {props.img}
+                state = {props.state}
+            />
             <div className="info">
-                <div className="line-1"> <img src={star} className="star" /> <p> 5.0 </p> <p className="gray-text"> {`(6)-USA`} </p> </div>
-                <p> Life lessons with Katie Zaferes </p>
-                <p> <strong> From $136 </strong> / person </p>                
+                <div className="line-1"> <img src={star} className="star" /> <p> {props.rating} </p> <p className="gray-text"> {`(${props.reviewCount}) - ${props.country}`} </p> </div>
+                <p> {props.title} </p>
+                <p> <strong> {`From $${props.price}`} </strong> / person </p>                
             </div>
         </div>
     )
