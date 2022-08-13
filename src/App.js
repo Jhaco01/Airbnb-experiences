@@ -1,24 +1,32 @@
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { Card } from './components/Card';
-import img from "./img/image-12.png";
+import Data from './components/Data';
 import './App.css';
 
 export const App = () => {
+
+  const cardData = Data.map( ({state,img,rating,reviewCount,country,title,price}) => {
+    return (
+      < Card
+            state = { state }
+            img = { img }
+            rating = { rating }
+            reviewCount = { reviewCount }
+            country = { country } 
+            title = { title }
+            price = { price }
+      />
+    )
+  } )
   
   return (
     <div className="App">
         < Navbar />
         < HeroSection />
-        < Card
-            state = 'SOLD OUT' 
-            img = { img }
-            rating = '5.0'
-            reviewCount = { 6 }
-            country = 'USA' 
-            title = 'Life lessons with Katie Zaferes'
-            price = {136}
-        />
+        <div className='cards'>        
+          {cardData}
+        </div>
     </div>
   );
 }
