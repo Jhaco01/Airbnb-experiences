@@ -1,20 +1,33 @@
 .card-img-state img{
     width: 100%; 
-}
-
-.card-img{
-    height: 0vh;
+    display: flex;
+    flex-direction: column;    
 }
 
 .card-state{
     margin-bottom: 120%;
     margin-left: 5%;
-    margin-top: 5%;    
+    margin-top: 5%;       
 }
 
-.card-state button{
-    padding: 2.5%;
-    background-color: white;
-    border-radius: 5px;
-    border-style: none;
+.card-state{
+    background-color: white; 
+    padding: 0.4vw 0.8vw;
+    top: 0%;
+    left: 18%;
+    position: absolute;
+    font-size: 1.2vw;
 }
+
+@media screen and (max-width: 400px){
+  
+    .card-state{
+        font-size: 3vw;
+    }
+ }
+
+ @media screen and (max-width: 950px) and (min-width: 650px){
+    .card-state{
+        font-size: 1.2vw;
+    }
+ }

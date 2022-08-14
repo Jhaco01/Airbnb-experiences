@@ -8,10 +8,11 @@ export const Card = (props) => {
         <div className="card">
             < CardImage 
                 img = {props.img}
-                state = {props.state}
+                openSpots = {props.openSpots}
+                location = {props.location}
             />
             <div className="info">
-                <div className="line-1"> <img src={star} className="star" /> <p> {props.rating} </p> <p className="gray-text"> {`(${props.reviewCount}) - ${props.country}`} </p> </div>
+                <div className="line-1"> <img src={star} className="star" /> <p> {props.rating} </p> <p className="gray-text"> {`(${props.reviewCount}) - ${props.location}`} </p> </div>
                 <p> {props.title} </p>
                 <p> <strong> {`From $${props.price}`} </strong> / person </p>                
             </div>

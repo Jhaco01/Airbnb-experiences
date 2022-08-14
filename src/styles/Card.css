@@ -3,6 +3,8 @@
     margin-top: 8%;
     padding-left: 7.5%;    
     display: inline-block;
+    position: relative;
+    height: 70vh;
 }
 
 .info div, .info p{
