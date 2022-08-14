@@ -9,9 +9,41 @@ body{
   margin: auto;
   font-family: 'Inter', sans-serif;
   background-color: white;
+  scrollbar-width: thin;
+  scrollbar-color: #fcae05 #e0e0e0;
+  scrollbar-width: thin;
+}
+
+@media screen and (max-width: 400px){
+   .App{
+    width: 100%;
+   }
+}
+
+@media screen and (max-width: 950px) and (min-width: 400px){
+  .App{
+   width: 70%;
+  }
 }
 
 .cards{
   display: flex;
-  width: 130%;
+  width: 100%;
+  overflow: auto;
+}
+
+.cards::-webkit-scrollbar {
+  width: 5%;
+}
+
+.cards::-webkit-scrollbar-track {
+  background-color: #f1c88b;
+}
+
+.cards::-webkit-scrollbar-thumb {
+  background-color: #ffc64a;
+}
+
+.cards::-webkit-scrollbar-corner{
+  border-radius: 10px;
 }

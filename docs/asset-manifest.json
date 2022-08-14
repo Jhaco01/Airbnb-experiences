@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "./static/css/main.f96a992c.css",
+    "main.js": "./static/js/main.f2a0443f.js",
+    "static/media/layout.png": "./static/media/layout.55bb98768a709b8d2d47.png",
+    "static/media/image-12.png": "./static/media/image-12.5d736ac3dc01f817ff4d.png",
+    "static/media/star.png": "./static/media/star.26d64e09affe716cd02f.png",
+    "static/media/Airbnb-logo.png": "./static/media/Airbnb-logo.ba0e18236f3eb09e9569.png",
+    "static/media/image-13.png": "./static/media/image-13.230cebf2f397ce4f74f1.png",
+    "static/media/image-14.png": "./static/media/image-14.9978c5b012896f7188c1.png",
+    "index.html": "./index.html",
+    "main.f96a992c.css.map": "./static/css/main.f96a992c.css.map",
+    "main.f2a0443f.js.map": "./static/js/main.f2a0443f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f96a992c.css",
+    "static/js/main.f2a0443f.js"
+  ]
+}
