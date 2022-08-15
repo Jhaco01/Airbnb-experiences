@@ -14,7 +14,7 @@ body{
   scrollbar-width: thin;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
    .App{
     width: 100%;
    }

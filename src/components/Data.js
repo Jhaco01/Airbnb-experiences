@@ -4,33 +4,35 @@ import img3 from "../img/image-13.png";
 
 export default [
     {
-        state: 'SOLD OUT',
+        id: '1',        
         img: img1,
         rating: '5.0',
         reviewCount: 6,
-        country: 'USA',
+        location: 'USA',
         title: 'Life lessons with Katie Zaferes',
         price: 136,
-
+        openSpots: 0,
     },
     {
-        state: 'ONLINE',
+        id: '2',        
         img: img2,
         rating: '5.0',
         reviewCount: 30,
-        country: 'USA',
+        location: 'ONLINE',
         title: 'Learn wedding photography',
         price: 125,
+        openSpots: 20,
 
     },
     {
-        state: 'ONLINE',
+        id: '3',
         img: img3,
         rating: '4.8',
         reviewCount: 2,
-        country: 'USA',
+        location: 'NORWAY',
         title: 'Group Mountain Biking',
         price: 50,
+        openSpots: 12,
 
     }
 ]
