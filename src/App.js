@@ -6,17 +6,11 @@ import './App.css';
 
 export const App = () => {
 
-  const cardData = Data.map( ({id,img,rating,reviewCount,location,title,price,openSpots}) => {
+  const cardData = Data.map( (item) => {
     return (
       < Card
-            key = {id}
-            img = { img }
-            rating = { rating }
-            reviewCount = { reviewCount }
-            location = { location } 
-            title = { title }
-            price = { price }
-            openSpots = {openSpots}
+            key = {item.id}
+            item = {item}
       />
     )
   } )

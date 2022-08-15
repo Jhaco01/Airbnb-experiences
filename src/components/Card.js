@@ -3,18 +3,18 @@ import "../styles/Card.css"
 import { CardImage } from "./CardImage";
 import star from "../img/star.png";
 
-export const Card = (props) => {
+export const Card = ({item}) => {
     return(
         <div className="card">
             < CardImage 
-                img = {props.img}
-                openSpots = {props.openSpots}
-                location = {props.location}
+                img = {item.img}
+                openSpots = {item.openSpots}
+                location = {item.location}
             />
             <div className="info">
-                <div className="line-1"> <img src={star} className="star" /> <p> {props.rating} </p> <p className="gray-text"> {`(${props.reviewCount}) - ${props.location}`} </p> </div>
-                <p> {props.title} </p>
-                <p> <strong> {`From $${props.price}`} </strong> / person </p>                
+                <div className="line-1"> <img src={star} className="star" /> <p> {item.rating} </p> <p className="gray-text"> {`(${item.reviewCount}) - ${item.location}`} </p> </div>
+                <p> {item.title} </p>
+                <p> <strong> {`From $${item.price}`} </strong> / person </p>                
             </div>
         </div>
     )
